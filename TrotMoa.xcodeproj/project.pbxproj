@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB05853B29A923A20085031E /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = CB05853A29A923A20085031E /* SlidingTabView */; };
+		CB05853D29A927B00085031E /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05853C29A927B00085031E /* PopularView.swift */; };
+		CB05853F29A927BA0085031E /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB05853E29A927BA0085031E /* StoreView.swift */; };
+		CB4E0F1F29A7CA9000E44A67 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0F1E29A7CA9000E44A67 /* NetworkingManager.swift */; };
+		CB4E0F2929A7CBA000E44A67 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0F2829A7CBA000E44A67 /* MusicViewModel.swift */; };
+		CB4E0F2B29A7CBD300E44A67 /* SingerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E0F2A29A7CBD300E44A67 /* SingerView.swift */; };
 		CB8F2E8729A7C91800932B35 /* TrotMoaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F2E8629A7C91800932B35 /* TrotMoaApp.swift */; };
 		CB8F2E8929A7C91800932B35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F2E8829A7C91800932B35 /* ContentView.swift */; };
 		CB8F2E8B29A7C91900932B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F2E8A29A7C91900932B35 /* Assets.xcassets */; };
@@ -14,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB05853C29A927B00085031E /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		CB05853E29A927BA0085031E /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		CB4E0F1E29A7CA9000E44A67 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		CB4E0F2829A7CBA000E44A67 /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		CB4E0F2A29A7CBD300E44A67 /* SingerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerView.swift; sourceTree = "<group>"; };
 		CB8F2E8329A7C91800932B35 /* TrotMoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrotMoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8F2E8629A7C91800932B35 /* TrotMoaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrotMoaApp.swift; sourceTree = "<group>"; };
 		CB8F2E8829A7C91800932B35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +37,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB05853B29A923A20085031E /* SlidingTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4E0F1D29A7CA7F00E44A67 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0F1E29A7CA9000E44A67 /* NetworkingManager.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		CB4E0F2029A7CAD200E44A67 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB4E0F2129A7CAE300E44A67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB4E0F2229A7CAEA00E44A67 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0F2529A7CAF900E44A67 /* Components */,
+				CB4E0F2729A7CB3600E44A67 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CB4E0F2529A7CAF900E44A67 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CB4E0F2629A7CB1500E44A67 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB4E0F2729A7CB3600E44A67 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0F2C29A7CBDC00E44A67 /* ViewModels */,
+				CB4E0F2D29A7CBE100E44A67 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB4E0F2C29A7CBDC00E44A67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0F2829A7CBA000E44A67 /* MusicViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB4E0F2D29A7CBE100E44A67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB4E0F2A29A7CBD300E44A67 /* SingerView.swift */,
+				CB05853C29A927B00085031E /* PopularView.swift */,
+				CB05853E29A927BA0085031E /* StoreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CB8F2E7A29A7C91800932B35 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				CB8F2E8629A7C91800932B35 /* TrotMoaApp.swift */,
+				CB4E0F1D29A7CA7F00E44A67 /* Utilites */,
+				CB4E0F2029A7CAD200E44A67 /* Extensions */,
+				CB4E0F2629A7CB1500E44A67 /* Services */,
+				CB4E0F2129A7CAE300E44A67 /* Models */,
+				CB4E0F2229A7CAEA00E44A67 /* Core */,
 				CB8F2E8829A7C91800932B35 /* ContentView.swift */,
 				CB8F2E8A29A7C91900932B35 /* Assets.xcassets */,
 				CB8F2E8C29A7C91900932B35 /* Preview Content */,
@@ -83,6 +172,9 @@
 			dependencies = (
 			);
 			name = TrotMoa;
+			packageProductDependencies = (
+				CB05853A29A923A20085031E /* SlidingTabView */,
+			);
 			productName = TrotMoa;
 			productReference = CB8F2E8329A7C91800932B35 /* TrotMoa.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,9 @@
 				Base,
 			);
 			mainGroup = CB8F2E7A29A7C91800932B35;
+			packageReferences = (
+				CB05853929A923A20085031E /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = CB8F2E8429A7C91800932B35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +233,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8F2E8929A7C91800932B35 /* ContentView.swift in Sources */,
+				CB05853F29A927BA0085031E /* StoreView.swift in Sources */,
+				CB4E0F1F29A7CA9000E44A67 /* NetworkingManager.swift in Sources */,
 				CB8F2E8729A7C91800932B35 /* TrotMoaApp.swift in Sources */,
+				CB4E0F2B29A7CBD300E44A67 /* SingerView.swift in Sources */,
+				CB05853D29A927B00085031E /* PopularView.swift in Sources */,
+				CB4E0F2929A7CBA000E44A67 /* MusicViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +439,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB05853929A923A20085031E /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB05853A29A923A20085031E /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB05853929A923A20085031E /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB8F2E7B29A7C91800932B35 /* Project object */;
 }
